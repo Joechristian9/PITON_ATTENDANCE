@@ -12,7 +12,9 @@ import {
     SidebarHeader,
     SidebarRail,
 } from "@/components/ui/sidebar";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle, FaUsers } from "react-icons/fa";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { FcCalendar } from "react-icons/fc";
 
 const data = {
     user: {
@@ -30,13 +32,13 @@ const data = {
     navMain: [
         {
             title: "Dashboard",
-            url: route("dashboard"),
-            icon: SquareTerminal,
+            url: "#",
+            icon: LuLayoutDashboard,
             isActive: true,
             items: [
                 {
                     title: "Overview",
-                    url: route("dashboard"),
+                    url: "#",
                 },
                 {
                     title: "Sanctions",
@@ -49,35 +51,31 @@ const data = {
             ],
         },
         {
-            title: "Models",
+            title: "Members",
             url: "#",
-            icon: Bot,
+            icon: FaUsers,
             items: [
                 {
-                    title: "Genesis",
+                    title: "View Members",
                     url: "#",
                 },
                 {
-                    title: "Explorer",
-                    url: "#",
-                },
-                {
-                    title: "Quantum",
+                    title: "Add Member",
                     url: "#",
                 },
             ],
         },
         {
-            title: "Documentation",
+            title: "Attendance",
             url: "#",
-            icon: BookOpen,
+            icon: FcCalendar,
             items: [
                 {
-                    title: "Introduction",
+                    title: "Take Attendance",
                     url: "#",
                 },
                 {
-                    title: "Get Started",
+                    title: "Attendance Logs",
                     url: "#",
                 },
                 {
@@ -86,29 +84,6 @@ const data = {
                 },
                 {
                     title: "Changelog",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Settings",
-            url: "#",
-            icon: Settings2,
-            items: [
-                {
-                    title: "General",
-                    url: "#",
-                },
-                {
-                    title: "Team",
-                    url: "#",
-                },
-                {
-                    title: "Billing",
-                    url: "#",
-                },
-                {
-                    title: "Limits",
                     url: "#",
                 },
             ],
